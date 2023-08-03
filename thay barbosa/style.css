@@ -21,20 +21,32 @@
     padding: 24px 0;
 }   
 
-.sobreImagem{
-    position: absolute;
-    padding: 0 0 0 660px;
+.sobreImagens{
+    text-align: center;
+    display: grid;
+    /*Vocês vão usar isso nas próximas aulas, tentei 
+    resolver sem dar "spoiler" mas não tinha como*/
+    grid-template-rows: 30% 30%;
 }
 
-.imagemSobre{
-    width: 50%;
+.sobreImagem{
+    width: 85%;
+    /*Se for mexer no tamanho das imagens é aqui*/
 }
 
 .sobre{
     background-color: #cb6ce6;
     color:black;
     display: flex;
-    padding: 24px 0 400px 0;
+    padding: 24px 0 10px 0;
+    /*Aqui arruma o quão distantes os elementos estão*/
+    justify-content: center;
+    align-items: center;
+    /*Esses dois sãoo motivo de toda a gambiarra. Alguma 
+    hora passei isso no quadro e talvez "não deu certo" 
+    no de vocês, mas se ficar estranho me chama que a 
+    gente só muda o 'center' por algum outro, mas se 
+    tirar ele desconfigura tudo.*/
 }
 
 .sobreConteudo{
@@ -57,4 +69,9 @@
 .membrosTitulo{
     text-align: center;
     padding: 30px;
+}
+
+.membrosTodos{
+    display: grid;
+    grid-template-columns:10% 20% 20% 20% 20% ;
 }
